@@ -12,25 +12,16 @@ namespace ADO.NET.Services
     internal class StudentService
     {
         private static Sql _sql=new();
-        public List<Student> GetStudentById(int id)
+        public Student GetStudentById(int id)
         {
             DataTable table = _sql.QueryEx($"SELECT * FROM Students WHERE Id={id}");
-
-            List<Student> list = new List<Student>();
-
-            foreach (DataRow row in table.Rows)
+            Student student = new Student
             {
-                Student student = new Student
-                {
-                    Id = (int)row["Id"],
-                    Name = row["Name"].ToString(),
-                    Surname = row["Surname"].ToString(),
-                    Age = (int)(row["Age"])
-                };
-
-                list.Add(student);
-            }
-            return list;
+                Name = table.Rows[0]["Name"].ToString(),
+                Surname = table.Rows[0]["Surname"].ToString(),
+                Age = Convert.ToInt32(table.Rows[0]["Age"])
+            };
+            return student;
         }
         public void Update(Student student)
         {

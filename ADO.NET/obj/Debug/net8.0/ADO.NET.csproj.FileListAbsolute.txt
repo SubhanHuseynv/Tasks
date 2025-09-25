@@ -20,3 +20,4 @@ C:\Users\TTS\Desktop\HomeTask\ADO.NET\obj\Debug\net8.0\refint\ADO.NET.dll
 C:\Users\TTS\Desktop\HomeTask\ADO.NET\obj\Debug\net8.0\ADO.NET.pdb
 C:\Users\TTS\Desktop\HomeTask\ADO.NET\obj\Debug\net8.0\ADO.NET.genruntimeconfig.cache
 C:\Users\TTS\Desktop\HomeTask\ADO.NET\obj\Debug\net8.0\ref\ADO.NET.dll
+C:\Users\TTS\Desktop\HomeTask\ADO.NET\obj\Debug\net8.0\ADO.NET.sourcelink.json

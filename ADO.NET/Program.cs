@@ -16,7 +16,10 @@ namespace ADO.NET
 
 
             StudentService studentService = new StudentService();
-            //List<Student>list= studentService.GetStudentById(1);
+
+
+
+            Console.WriteLine(studentService.GetStudentById(4).Name);
             //foreach (Student student in list)
             //{
             //    Console.WriteLine(student.Name+" "+student.Surname +" "+student.Age);
@@ -26,16 +29,16 @@ namespace ADO.NET
 
 
 
-            Student student = new Student
-            {
-                Id=1,
-                Name = "Qalib",
-                Surname = "Test",
-                Age = 24
-            };
+            //Student student = new Student
+            //{
+            //    Id=1,
+            //    Name = "Qalib",
+            //    Surname = "Test",
+            //    Age = 24
+            //};
 
-            studentService.Update(student);
-            studentService.Remove(1);
+            //studentService.Update(student);
+            //studentService.Remove(2);
 
 
 
