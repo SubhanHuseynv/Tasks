@@ -19,7 +19,7 @@ namespace ADO.NET.Services
             {
                 Name = table.Rows[0]["Name"].ToString(),
                 Surname = table.Rows[0]["Surname"].ToString(),
-                Age = Convert.ToInt32(table.Rows[0]["Age"])
+                Age = (int)(table.Rows[0]["Age"])
             };
             return student;
         }
